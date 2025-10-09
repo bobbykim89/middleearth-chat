@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+@import '@bobbykim/manguito-theme/mcl-theme-v4.css';
+@source "../../../node_modules/@bobbykim";
+
+@layer theme {
+  @theme {
+    --color-warning: #ff6900;
+    --font-inter: 'Inter', sans-serif;
+  }
+}
