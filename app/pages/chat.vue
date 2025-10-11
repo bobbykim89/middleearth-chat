@@ -1,8 +1,25 @@
 <script setup lang="ts">
+import { useRequestURL } from '#app'
 import InputBlock from '@/components/InputBlock.vue'
 import { useChatStore } from '@/stores'
 import { storeToRefs } from 'pinia'
 import ConversationBlock from '~/components/ConversationBlock.vue'
+
+const url = useRequestURL()
+
+useHead({
+  title: 'About | MiddleEarthChat',
+  meta: [
+    { property: 'og:title', content: 'Chat | MiddleEarthChat' },
+    { property: 'og:url', content: url.href },
+    { property: 'twitter:domain', content: url.host },
+    { property: 'twitter:url', content: url.href },
+    {
+      name: 'twitter:title',
+      content: 'Chat | MiddleEarthChat',
+    },
+  ],
+})
 
 const chatStore = useChatStore()
 const { messages } = storeToRefs(chatStore)

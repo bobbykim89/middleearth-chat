@@ -1,4 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRequestURL } from '#app'
+
+const url = useRequestURL()
+
+useHead({
+  meta: [
+    { property: 'og:url', content: url.href },
+    { property: 'twitter:domain', content: url.host },
+    { property: 'twitter:url', content: url.href },
+  ],
+})
+</script>
 
 <template>
   <div class="text-light-3 container px-xs">

@@ -37,7 +37,7 @@ const socialUrls = {
   <div class="container">
     <div class="flex justify-center items-center min-h-[75vh] px-xs py-md">
       <div
-        class="p-md md:px-lg md:py-xl bg-light-3 max-w-screen-lg rounded-md drop-shadow-md"
+        class="p-md md:px-lg md:py-xl bg-dark-4 max-w-screen-lg rounded-md drop-shadow-md"
       >
         <div
           class="flex flex-col md:flex-row gap-lg items-center justify-center"
@@ -51,14 +51,15 @@ const socialUrls = {
               height="256"
             />
           </div>
-          <div class="text-dark-3">
+          <div class="text-light-3">
             <h2 class="h2-md mb-xs">MiddleEarthChat</h2>
             <div class="font-bold text-lg mb-xs">
               <p>
-                A photo blog dedicated to Manguito, an adorable peach-faced
-                lovebird, showcasing daily moments and charming antics.
+                Discover an AI-powered app that answers all your questions about
+                The Lord of the Rings characters, from Frodo and Gandalf to
+                Sauron and beyond. Explore Middle-earth like never before.
               </p>
-              <p>Version: 0.1.1</p>
+              <p>Version: 0.1.0</p>
               <p>Maintainer: Bobby Kim</p>
             </div>
             <div class="flex items-center justify-center gap-xs">
@@ -108,7 +109,7 @@ const socialUrls = {
                 :target="socialUrls.email.target"
                 rel="noreferrer"
                 aria-label="email link"
-                class="p-3xs rounded-md bg-dark-3 text-light-3 hover:bg-opacity-75 transition-colors duration-300 ease-linear"
+                class="p-3xs rounded-md bg-light-3 text-dark-4 hover:bg-opacity-75 transition-colors duration-300 ease-linear"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

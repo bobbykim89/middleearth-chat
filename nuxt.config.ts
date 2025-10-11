@@ -11,6 +11,34 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Discover an AI-powered app that answers all your questions about The Lord of the Rings characters, from Frodo and Gandalf to Sauron and beyond. Explore Middle-earth like never before.',
+        },
+        { property: 'og:title', content: 'MiddleEarchChat' },
+        {
+          property: 'og:description',
+          content:
+            'Discover an AI-powered app that answers all your questions about The Lord of the Rings characters, from Frodo and Gandalf to Sauron and beyond. Explore Middle-earth like never before.',
+        },
+        { property: 'og:type', content: 'website' },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:title',
+          content: 'MiddleEarchChat',
+        },
+        {
+          name: 'twitter:description',
+          content:
+            'Discover an AI-powered app that answers all your questions about The Lord of the Rings characters, from Frodo and Gandalf to Sauron and beyond. Explore Middle-earth like never before.',
+        },
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
   typescript: {
