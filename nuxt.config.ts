@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/eslint', '@nuxt/image', '@pinia/nuxt', '@nuxt/fonts'],
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'page', mode: 'out-in' },
     head: {
       title: 'MiddleEarchChat',
       htmlAttrs: {
@@ -22,6 +24,9 @@ export default defineNuxtConfig({
         types: ['vite/client'],
       },
     },
+  },
+  pinia: {
+    storesDirs: ['~/stores/**'],
   },
   postcss: {
     plugins: {

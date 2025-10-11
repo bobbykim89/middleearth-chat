@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@bobbykim/manguito-theme": "^0.28.0",
+    "@bobbykim/mcl-footer": "^0.9.6",
     "@bobbykim/mcl-forms": "^0.9.7",
     "@nuxt/eslint": "1.9.0",
     "@nuxt/fonts": "^0.11.4",

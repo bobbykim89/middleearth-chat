@@ -24,17 +24,17 @@
       </div>
       <div>
         <h1 class="h1-lg text-center mb-md">
-          Chat with Your Favorite
+          Your AI Guide to
           <span class="text-warning">Lord of the Rings</span> Characters
         </h1>
         <p class="text-lg text-center mb-md">
-          Engage in epic conversations with iconic characters from Middle-earth.
-          Ask Gandalf for wisdom, seek adventure with Aragorn, or discuss the
-          Ring with Frodo. The journey begins here.
+          Ask anything about the characters from Middle-earth and get instant,
+          accurate answers. Learn about their backstories, relationships,
+          journeys, and more through intelligent AI-powered search.
         </p>
         <div class="flex justify-center gap-3">
           <NuxtLink class="btn btn-warning p-xs" to="/chat"
-            >Start Chatting</NuxtLink
+            >Ask a Question</NuxtLink
           >
           <NuxtLink class="btn btn-dark-4 p-xs" to="/about"
             >Learn More</NuxtLink
@@ -64,10 +64,11 @@
             />
           </svg>
         </button>
-        <h3 class="h3-md mb-xs">20+ Characters</h3>
+        <h3 class="h3-md mb-xs">Comprehensive Knowledge</h3>
         <p class="text-dark-1">
-          Chat with Gandalf, Frodo, Aragorn, Legolas, Gimli, Galadriel, and many
-          more beloved characters from the trilogy.
+          Access detailed information about all major characters from the
+          trilogy including Gandalf, Frodo, Aragorn, Legolas, Gimli, Galadriel,
+          and more.
         </p>
       </div>
       <div
@@ -88,10 +89,10 @@
             />
           </svg>
         </button>
-        <h3 class="h3-md mb-xs">Authentic Conversations</h3>
+        <h3 class="h3-md mb-xs">Accurate Information</h3>
         <p class="text-dark-1">
-          Each character responds with their unique personality, speech
-          patterns, and knowledge from the books and films.
+          Get precise answers about character histories, motivations,
+          relationships, and story arcs based on the books and films.
         </p>
       </div>
       <div
@@ -125,16 +126,16 @@
         class="grid lg:grid-cols-2 gap-6 border border-light-4 p-sm lg:p-md rounded-lg bg-light-4/3"
       >
         <div class="self-center order-2 lg:order-1">
-          <h2 class="h2-md mb-sm">Experience Middle-earth Like Never Before</h2>
+          <h2 class="h2-md mb-sm">Discover Middle-earth Characters in Depth</h2>
           <p class="mb-sm">
-            Whether you're seeking wisdom from Gandalf the Grey, learning
-            archery from Legolas, or hearing tales of valor from Aragorn, our
-            AI-powered chatbot brings these legendary characters to life.
+            Our AI-powered knowledge base helps you explore the rich details of
+            LOTR characters. Ask questions and receive accurate, contextual
+            answers drawn from extensive character information.
           </p>
           <ul class="mcl-list mcl-list-warning mcl-list-lg">
-            <li>Ask for advice on life's challenges</li>
-            <li>Discuss lore and Middle-earth history</li>
-            <li>Explore character perspectives and motivations</li>
+            <li>Learn about character backstories and origins</li>
+            <li>Understand character relationships and dynamics</li>
+            <li>Discover character arcs and key story moments</li>
           </ul>
         </div>
         <div class="order-1 lg:order-2">
@@ -146,13 +147,13 @@
     <section
       class="pt-md pb-lg lg:pt-lg lg:pb-xl lg:max-w-4/5 xl:max-w-3/4 mx-auto flex flex-col items-center"
     >
-      <h2 class="h2-md mb-sm">Ready to Begin Your Journey?</h2>
+      <h2 class="h2-md mb-sm">Ready to Explore?</h2>
       <p class="text-lg mb-sm">
-        Join thousands of fans who are already chatting with their favorite
-        characters from Middle-earth.
+        Start asking questions about your favorite LOTR characters and uncover
+        the details of their epic journeys.
       </p>
       <NuxtLink class="btn btn-warning py-xs" to="/chat"
-        >Start Your Adventure</NuxtLink
+        >Ask Your First Question</NuxtLink
       >
     </section>
   </div>

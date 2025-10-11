@@ -11,6 +11,9 @@ importers:
       '@bobbykim/manguito-theme':
         specifier: ^0.28.0
         version: 0.28.0(typescript@5.9.3)
+      '@bobbykim/mcl-footer':
+        specifier: ^0.9.6
+        version: 0.9.6(typescript@5.9.3)
       '@bobbykim/mcl-forms':
         specifier: ^0.9.7
         version: 0.9.7(typescript@5.9.3)
@@ -207,6 +210,9 @@ packages:
 
   '@bobbykim/manguito-theme@0.28.0':
     resolution: {integrity: sha512-dP91K6JUlLmx/Qxo2q0teRWeoKvwMDNGXsLKZSYCJilJCcxNgH/458OCMWEqb5NXJRriMUPoKBy/W0ncRJjFsA==}
+
+  '@bobbykim/mcl-footer@0.9.6':
+    resolution: {integrity: sha512-DwhwTDNWZ4LvLpRrg6w7lXX26fDgTrJch3pS2oyAzQDU1HJ7scxStnvjq3VZB/ZZQlNbi28hH8koVSRkkffaUw==}
 
   '@bobbykim/mcl-forms@0.9.7':
     resolution: {integrity: sha512-IrO6REsxCzwGwFjx25+CRv4lN2jy/L9Kan79U05wtxJ2kDGzJg09FTXYsbkIEcWUp0osowxlTeWiKbqO2VJs4A==}
@@ -4561,6 +4567,13 @@ snapshots:
   '@bobbykim/manguito-theme@0.28.0(typescript@5.9.3)':
     dependencies:
       '@vueuse/core': 12.8.2(typescript@5.9.3)
+      vue: 3.5.22(typescript@5.9.3)
+    transitivePeerDependencies:
+      - typescript
+
+  '@bobbykim/mcl-footer@0.9.6(typescript@5.9.3)':
+    dependencies:
+      '@bobbykim/manguito-theme': 0.28.0(typescript@5.9.3)
       vue: 3.5.22(typescript@5.9.3)
     transitivePeerDependencies:
       - typescript
