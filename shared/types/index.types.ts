@@ -2,13 +2,13 @@ export type MessageType = {
   id: string
   question: string
   answer: string
-  created_at: Date
+  created_at: string
 }
 
 export type ConversationType = {
   id: string
   messages: MessageType[]
-  created_at: Date
+  created_at: string
 }
 
 export type ConversationResType = {
