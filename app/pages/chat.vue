@@ -37,6 +37,14 @@ const handleReset = async (e: Event) => {
     await chatStore.resetConversation()
   }
 }
+const handleThumbUp = (e: Event, id: string) => {
+  e.preventDefault()
+  chatStore.handleFeedbacks(id, 'GOOD')
+}
+const handleThumbDown = (e: Event, id: string) => {
+  e.preventDefault()
+  chatStore.handleFeedbacks(id, 'BAD')
+}
 </script>
 
 <template>
@@ -54,6 +62,8 @@ const handleReset = async (e: Event) => {
           v-for="message in messages"
           :key="message.id"
           v-bind="message"
+          @thump-up="handleThumbUp"
+          @thumb-down="handleThumbDown"
         />
       </div>
       <InputBlock

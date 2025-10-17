@@ -1,7 +1,10 @@
+export type FeedbackType = 'GOOD' | 'BAD' | null
+
 export type MessageType = {
   id: string
   question: string
   answer: string
+  feedback: FeedbackType
   created_at: string
 }
 

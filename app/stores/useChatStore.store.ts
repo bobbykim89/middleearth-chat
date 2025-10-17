@@ -1,5 +1,6 @@
 import type {
   ConversationResType,
+  FeedbackType,
   MessageResType,
   MessageType,
 } from '#shared/types/index.types'
@@ -50,6 +51,20 @@ export const useChatStore = defineStore('chat-store', () => {
     messages.value = [...messages.value, res.data]
   }
 
+  const handleFeedbacks = async (id: string, feedback: FeedbackType) => {
+    const res = await $fetch(`/api/chat/${id}`, {
+      method: 'PUT',
+      body: { id, feedback },
+    })
+    const messageIdx = messages.value.findIndex((item) => item.id === id)
+    if (messageIdx !== -1 && messages.value[messageIdx]) {
+      messages.value[messageIdx] = {
+        ...messages.value[messageIdx],
+        feedback: res.feedback,
+      }
+    }
+  }
+
   const resetConversation = async () => {
     const cookie = useCookie('conversation_id', {
       maxAge: 1210000,
@@ -73,6 +88,7 @@ export const useChatStore = defineStore('chat-store', () => {
     messages,
     initializeStore,
     askQuestion,
+    handleFeedbacks,
     resetConversation,
   }
 })
